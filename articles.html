@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Articles | HealthTrack</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            padding-top: 60px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation - matches all pages */
+        .nav-links {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Header */
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .article-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .article-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-date {
+            color: #667eea;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .article-content h3 {
+            color: #764ba2;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .article-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .article-content a {
+            color: #764ba2;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .article-content a:hover {
+            color: #f093fb;
+            text-decoration: underline;
+        }
+
+        /* Footer - same as all pages */
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 15px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #f093fb;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+                padding: 10px 0;
+                font-size: 0.9rem;
+            }
+            
+            body {
+                padding-top: 50px;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Latest Health & Fitness Articles</h1>
+        
+        <div class="articles-grid">
+            <!-- Article 1 -->
+            <div class="article-card">
+                <img src="/Images/HIIT_WORKOUT/HIIT_WORKOUT.avif" alt="HIIT Workout" class="article-img">
+                <div class="article-content">
+                    <span class="article-date">June 15, 2023</span>
+                    <h3>The Science Behind HIIT: Why Short Workouts Deliver Big Results</h3>
+                    <p>Discover how High-Intensity Interval Training can boost your metabolism and improve cardiovascular health in just 20 minutes per day.</p>
+                    <a href="articles/hiit-workouts.html">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="article-card">
+                <img src="/Images/SUPERFOODS/SuperFoods_1.avif" alt="Healthy Eating" class="article-img">
+                <div class="article-content">
+                    <span class="article-date">June 8, 2023</span>
+                    <h3>10 Superfoods You Should Be Eating in 2023</h3>
+                    <p>Nutritionists reveal the top superfoods packed with antioxidants, vitamins, and minerals to boost your immune system and energy levels.</p>
+                    <a href="articles/superfoods-article.html">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="article-card">
+                <img src="/Images/SLEEP-ARTICLE/sleep_1.png" alt="Sleep" class="article-img">
+                <div class="article-content">
+                    <span class="article-date">June 1, 2023</span>
+                    <h3>The Sleep-Weight Connection: How Rest Affects Your BMI</h3>
+                    <p>New research shows how quality sleep can help regulate hormones that control hunger and metabolism.</p>
+                    <a href="articles/sleep-article.html">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Article 4 -->
+            <div class="article-card">
+                <img src="/Images/YOGA/yogaposes.jpeg" alt="Yoga" class="article-img">
+                <div class="article-content">
+                    <span class="article-date">May 25, 2023</span>
+                    <h3>Yoga for Weight Management: Poses That Boost Metabolism</h3>
+                    <p>These 7 yoga poses can help stimulate your thyroid, improve digestion, and support healthy weight management.</p>
+                    <a href="articles/yoga-article.html">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Article 5 -->
+            <div class="article-card">
+                <img src="/Images/Hydration/Hydration_1.avif" alt="Hydration" class="article-img">
+                <div class="article-content">
+                    <span class="article-date">May 18, 2023</span>
+                    <h3>Hydration and Weight Loss: The Water Advantage</h3>
+                    <p>Learn how proper hydration can increase fat burning, reduce water retention, and help you feel fuller longer.</p>
+                    <a href="articles/hydration-article.html">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            <p>&copy; 2025 HealthTrack. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

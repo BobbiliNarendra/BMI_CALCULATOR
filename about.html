@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | HealthTrack</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            padding-top: 60px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation - matches all pages */
+        .nav-links {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Content Box - matches article style */
+        .content-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color:#764ba2;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 40px;
+            border-bottom: 2px solid #f3f3f3;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .mission {
+            background: #f9f5ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #764ba2;
+        }
+
+        .team-member {
+            display: flex;
+            margin: 30px 0;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #667eea;
+            flex-shrink: 0;
+        }
+
+        .team-member p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        /* Footer - same as all pages */
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #f093fb;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+                padding: 10px 0;
+                font-size: 0.9rem;
+            }
+            
+            body {
+                padding-top: 50px;
+            }
+            
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .team-member img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            <h1>About HealthTrack</h1>
+            
+            <p>Welcome to HealthTrack, your trusted resource for health and fitness information since 2020.</p>
+            
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To empower individuals with accurate, easy-to-use tools and information to take control of their health and wellness journey.</p>
+            </div>
+            
+            <h2>Our Story</h2>
+            <p>Founded by a team of health enthusiasts and tech experts, HealthTrack began as a simple BMI calculator and has grown into a comprehensive health resource platform serving over 500,000 users monthly.</p>
+            
+            <h2>Meet the Team</h2>
+            
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Johnson">
+                <div>
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>Medical Advisor - Board certified nutritionist with 10+ years experience in clinical nutrition and weight management.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark Williams">
+                <div>
+                    <h3>Mark Williams</h3>
+                    <p>Fitness Expert - Certified personal trainer and former athlete with specialization in metabolic conditioning.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa Chen">
+                <div>
+                    <h3>Lisa Chen</h3>
+                    <p>Lead Developer - Created the HealthTrack calculator technology with a focus on user experience and data accuracy.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            <p>&copy; 2025 HealthTrack. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
