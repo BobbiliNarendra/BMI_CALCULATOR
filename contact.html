@@ -86,7 +86,7 @@
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 2px solid #e1e5e9;
             border-radius: 10px;
             font-size: 16px;
@@ -109,7 +109,7 @@
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             border: none;
-            padding: 12px 20px;
+            padding: 15px 30px;
             border-radius: 10px;
             font-size: 16px;
             font-weight: bold;
@@ -174,19 +174,37 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                gap: 10px;
-                padding: 10px 0;
-                font-size: 0.9rem;
-            }
-            
-            body {
-                padding-top: 50px;
-            }
-            
-            .content-box {
-                padding: 20px;
-            }
+    .nav-links {
+        gap: 10px;
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+    
+    body {
+        padding-top: 50px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .content-box {
+        padding: 20px;
+    }
+    
+    /* Add these new rules for form elements on mobile */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        box-sizing: border-box; /* Ensures padding is included in width */
+        width: 100%;
+        max-width: 100%; /* Prevents elements from overflowing */
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+
         }
     </style>
 </head>
