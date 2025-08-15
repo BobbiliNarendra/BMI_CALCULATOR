@@ -462,6 +462,22 @@
             display: block;
         }
 
+                .responsive-ad {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .responsive-ad iframe {
+            max-width: 100%;
+            border: none;
+            display: block;
+            margin: 0 auto;
+        }
+
+
         /* Medium devices (tablets, 768px and up) */
         @media (min-width: 768px) {
             .header h1 {
@@ -742,8 +758,17 @@
             
             <div class="ad-container">
                 <p>Advertisement</p>
-                <div style="background: #eee; padding: 100px 15px; border-radius: 5px; font-size: 0.9rem;">
-                    Ad Space (Responsive)
+                <div class="responsive-ad">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key': 'b69131a4333ec840e60afab48f2c19d7',
+                            'format': 'iframe',
+                            'height': 600,
+                            'width': 160,
+                            'params': {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/b69131a4333ec840e60afab48f2c19d7/invoke.js"></script>
                 </div>
             </div>
         </div>
